@@ -1,0 +1,78 @@
+/* Solaroof — Material 3 tokens
+   Seed: #FF6E00 (brand orange, sampled from the logo)
+   Neutrals: chroma 0 — true greys, no warm or cool tint in either theme
+   Generated with @material/material-color-utilities@0.2.7 — do not hand-edit.
+
+   Four colours on the whole site: white, grey, black, orange.
+
+   Light is the default. Dark is opt-in via [data-theme="dark"] on <html>, and
+   also picked up automatically when the visitor's OS asks for dark and no
+   explicit choice has been stored. */
+
+/* shared brand + light theme */
+:root {
+  --brand: #FF6E00;
+  --brand-hover: #b24b00;
+  --brand-ink: #1b1b1b;
+  --plate: #ffffff;
+  --canvas: #f1f1f1;
+  --surface: #ffffff;
+  --surface-2: #e8e8e8;
+  --surface-3: #dddddd;
+  --on-canvas: #1f1f1f;
+  --on-canvas-muted: #5e5e5e;
+  --on-canvas-dim: #848484;
+  --line: #dddddd;
+  --line-strong: #ababab;
+  --nav-bg: #1f1f1f;
+  --nav-fg: #f9f9f9;
+  --nav-fg-muted: #b0b0b0;
+  --ink: #1b1b1b;
+  --on-ink: #f9f9f9;
+  --on-ink-muted: #b0b0b0;
+  --on-ink-dim: #848484;
+  --ink-line: #3b3b3b;
+}
+
+/* dark theme — explicit choice */
+:root[data-theme="dark"] {
+  --canvas: #111111;
+  --surface: #222222;
+  --surface-2: #191919;
+  --surface-3: #2e2e2e;
+  --on-canvas: #f1f1f1;
+  --on-canvas-muted: #b0b0b0;
+  --on-canvas-dim: #848484;
+  --line: #353535;
+  --line-strong: #5e5e5e;
+  --nav-bg: #242424;
+  --nav-fg: #f3f3f3;
+  --nav-fg-muted: #b0b0b0;
+  --ink: #1d1d1d;
+  --on-ink: #f1f1f1;
+  --on-ink-muted: #b0b0b0;
+  --on-ink-dim: #848484;
+  --ink-line: #353535;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+    --canvas: #111111;
+    --surface: #222222;
+    --surface-2: #191919;
+    --surface-3: #2e2e2e;
+    --on-canvas: #f1f1f1;
+    --on-canvas-muted: #b0b0b0;
+    --on-canvas-dim: #848484;
+    --line: #353535;
+    --line-strong: #5e5e5e;
+    --nav-bg: #242424;
+    --nav-fg: #f3f3f3;
+    --nav-fg-muted: #b0b0b0;
+    --ink: #1d1d1d;
+    --on-ink: #f1f1f1;
+    --on-ink-muted: #b0b0b0;
+    --on-ink-dim: #848484;
+    --ink-line: #353535;
+  }
+}
